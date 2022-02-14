@@ -1,4 +1,6 @@
-<a-scene embedded arjs>
+<!-- <a-scene embedded arjs>
+  <a-marker-camera type="pattern" url="https://arjs-cors-proxy.herokuapp.com/https://github.com/louisg404/ar-mspr/blob/main/src/app/home/elephant.patt"></a-marker-camera>
+  <a-gltf-model dynamic-body="dynamic-body" src="https://arjs-cors-proxy.herokuapp.com/https://andrescuervo.github.io/assets/ghostie/ghostie.gltf" scale="0.25 0.25 0.25" position="-3 0 0"></a-gltf-model>
   <a-marker type="pattern" url="https://arjs-cors-proxy.herokuapp.com/https://github.com/louisg404/ar-mspr/blob/main/src/app/home/elephant.patt">
       <a-entity
       position="0 -1 0"
@@ -8,4 +10,13 @@
   </a-marker>
   <a-entity camera></a-entity>
 
-  </a-scene>
+  </a-scene> -->
+
+<!-- You can get the Hiro image that this demo needs here: https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg-->
+<!-- Just load it up on your phone or print it out and point your camera at the image and a little blue-green box should appear!-->
+<a-scene embedded="" arjs="sourceType: webcam;" physics="debug: true; friction: 0.1; restitution: 1.25; gravity: -0.8;">
+  <a-marker-camera type="pattern" url="https://arjs-cors-proxy.herokuapp.com/https://github.com/louisg404/ar-mspr/blob/main/src/app/home/new.patt"></a-marker-camera>
+  <!-- <a-plane static-body="static-body" rotation="-90 0 0" scale="3 3 3" color="blue"></a-plane> -->
+  <a-gltf-model dynamic-body="dynamic-body" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf" scale="0.25 0.25 0.25" position="-3 0 0"></a-gltf-model>
+</a-scene>
+<!-- GLTF model from: https://ten-thousand-models.appspot.com/detail.html?file_id=40746-->
